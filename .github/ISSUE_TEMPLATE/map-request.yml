@@ -1,0 +1,28 @@
+name: Map request
+description: A community map you'd like to see on Zatlas.
+title: "[Map] "
+labels: ["map-request"]
+body:
+  - type: markdown
+    attributes:
+      value: Check the open map requests first; a 👍 on an existing one counts too.
+  - type: input
+    id: name
+    attributes:
+      label: Map name
+      placeholder: e.g. Deer Isle
+    validations:
+      required: true
+  - type: input
+    id: workshop
+    attributes:
+      label: Steam Workshop id
+      description: The number at the end of the Workshop page address (…?id=1234567890).
+      placeholder: "1234567890"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this map?
+      description: Servers you play it on, how many people play it, anything that helps us pick.

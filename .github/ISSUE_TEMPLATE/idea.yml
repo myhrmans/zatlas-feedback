@@ -1,0 +1,29 @@
+name: Idea
+description: A feature or a change you'd like on Zatlas.
+title: "[Idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like, and what would it help you do in game?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Part of the site
+      options:
+        - Map and Layers
+        - Loot and item search
+        - 3D View and sniping
+        - Routes and Near me
+        - Groups, pings and Markers
+        - Phone layout
+        - Something new
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: Sketches, screenshots, examples.

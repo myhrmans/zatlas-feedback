@@ -1,0 +1,49 @@
+name: Bug
+description: Something on Zatlas is wrong or doesn't work.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: world
+    attributes:
+      label: World
+      options:
+        - Nasdara
+        - Chernarus
+        - Livonia
+        - Sakhal
+        - Namalsk
+        - Not World-specific
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Page address
+      description: Copy it from the address bar; it includes the spot on the map.
+      placeholder: https://zatlas.app/...
+  - type: dropdown
+    id: device
+    attributes:
+      label: Device
+      options:
+        - Desktop
+        - Phone
+        - Tablet
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: e.g. Chrome, Firefox, Safari on iPhone
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or clip
+      description: Drag an image or video in here if you have one.
